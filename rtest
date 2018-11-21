@@ -1,0 +1,75 @@
+/*
+ * Juvantha crawford
+ */ 
+  
+import java.util.*;
+
+public class Testtwo
+  
+public static void main(String[] args)
+{
+Scanner myInput = new Scanner(System.in);
+//Deteriming variables
+Scanner myInput = new Scanner (System.in);
+String name1 = myInput.nextLine();//Team name
+  System.out.println("What is your team name");
+System.out.println("What is your team name");
+String name2 = myInput.nextLine();//Team name
+int wins = myInput.nextInt();// team wins;
+int lose = myInput.nextInt();// team loss;
+int ties = myInput.nextInt();// team ties;
+Randon rand = new Random();
+int win2 = rand.nextInt(10)  +1;
+int loss2 = rand.nextInt(10) +1;
+int ties2 = rand.nextInt(10) +1;
+
+//outputting stats team 1
+System.out.println("you have this many wins team 1" + win);
+System.out.println("How many losses do you have" + loss);
+System.out.println("How many ties do u have team 1" + ties);
+
+//outputting team 2 stats
+System.out.println("you have this many wins team 2" + win2);
+System.out.println("you have this many losses team 2" + loss2);
+System.out.println("you have this many ties team 2" + ties2);
+
+//Declaring math varialbles 
+int points = ((win*2) + tie);
+int points2 = ((win2*2) + tie2);
+int total = (win + loss + ties);
+int total2 = (win2 + loss2 + ties2);
+double decimal = (total/win);
+double decimal2 = (total2/win2);
+
+
+//Outputing season for team 1
+if (points < 10)//
+{
+  System.out.println("Try harder next year" + " " + name1);
+}
+else if (points >10 && points <20);
+{
+  System.out.println("You had a good season team 1" + " " + name1);
+  {
+    if ( points >20);
+   {
+     System.out.println("You had a great season");
+     
+     
+     
+     
+     //outputting season for team 2
+     if (points < 10)//
+{
+  System.out.println("Try harder next year" + " " + name2);
+}
+else if (points2 >10 && points2 <20);
+{
+  System.out.println("You had a good season team 1" + " " + name2);
+  {
+    if ( points2 >20);
+   {
+     System.out.println("You had a great season" + " " + name2);
+   }
+  }
+}
